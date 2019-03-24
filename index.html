@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Marten Truu CV</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Noto Sans", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      h1,
+      h2 {
+        font-family: "Noto Serif", serif;
+      }
+
+      header,
+      section {
+        background: linear-gradient(
+          rgb(255, 255, 255) 50%,
+          rgb(240, 240, 240) 100%
+        );
+        padding: 1em;
+      }
+      footer {
+        padding: 1em;
+      }
+
+      .light-color {
+        color: white;
+      }
+
+      .experience-cards {
+        margin: 0 -0.5em;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .experience-card {
+        padding: 1em;
+        border-radius: 1em;
+        width: 12em;
+        display: block;
+        margin: 0.5em;
+        box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+          0 8px 16px -8px rgba(0, 0, 0, 0.3),
+          0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+      }
+
+      .experience-card--kuressaare-gymnasium {
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAG0lEQVQYV2NMKL/ty4ADMIIkF3SqbsYmP+gkAayXGgfe8HOVAAAAAElFTkSuQmCC)
+            repeat,
+          url(./images/kuressaareGymnasium.svg) no-repeat center/contain,
+          linear-gradient(90deg, #3c3c96 0%, #6464be 50%);
+      }
+
+      .experience-card--tal-tech {
+        background: url(./images/talTech.svg) center center,
+          linear-gradient(90deg, #3c3c96 0%, #6464be 50%);
+      }
+
+      .experience-card--maritime-academy {
+        background: url(./images/maritime.svg) no-repeat bottom right/auto 4.5em,
+          url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAALElEQVQoU2NkIBIwEqmOgQ4KXzP89wU5R5SBcTOyszCsJlohLs/RwTO4rAYA1xUGCyS6IWMAAAAASUVORK5CYII=)
+            repeat,
+          linear-gradient(90deg, #afe2f2 0%, #e0ffdf 50%);
+      }
+
+      .experience-card--transferwise {
+        background: url(./images/twFlag.svg) no-repeat center/10em,
+          linear-gradient(90deg, #2e4369 0%, #37517e 50%);
+      }
+
+      .experience-card--tallink {
+        background: url(./images/tallinkLogo.svg) no-repeat center/10em,
+          linear-gradient(90deg, #00ccad 0%, #00ecc9 50%);
+      }
+    </style>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <script>
+      var app = Elm.Main.init();
+    </script>
+  </body>
+</html>
